@@ -1,0 +1,35 @@
+name,barcode,brand,description,price,available,review,rating
+Product 1,34567890,Brand 1,This is sample description,200,TRUE,,
+Product 2,4567890,Brand 2,This is sample description,100,FALSE,,
+Product 3,987654,Brand 3,This is sample description,150,TRUE,,
+Product 4,12345678,Brand 4,This is sample description,250,FALSE,,
+Product 5,23456765,Brand 5,This is sample description,300,TRUE,,
+Product 6,23423452,Brand 6,This is sample description,350,TRUE,,
+Product 7,987123,Brand 7,This is sample description,180,TRUE,,
+Product 8,1256789,Brand 8,This is sample description,120,FALSE,,
+Product 9,34562718,Brand 9,This is sample description,110,TRUE,,
+Product 10,3.46E+08,Brand 10,This is sample description,90,FALSE,,
+Product 11,667788,Brand 10,This is sample description,90,FALSE,,
+Product 12,887799,Brand 10,This is sample description,90,FALSE,,
+Product 13,24342,Brand 10,This is sample description,90,FALSE,,
+Product 14,111,Brand 10,This is sample description,90,FALSE,,
+Product 15,1015,Brand 10,This is sample description,90,FALSE,Good,5
+Product 16,12345,Brand 10,This is sample description,123,TRUE,Bad,2
+Product 17,23675,Brand 10,This is sample description,123,FALSE,Not Bad,3
+Product 18,35005,Brand 10,This is sample description,123,TRUE,Ok,4
+Product 19,46335,Brand 10,This is sample description,123,FALSE,Good,5
+Product 20,57665,Brand 10,This is sample description,123,TRUE,Bad,2
+Product 21,68995,Brand 11,This is sample description,123,FALSE,Not Bad,3
+Product 22,80325,Brand 12,This is sample description,123,TRUE,Ok,4
+Product 23,91655,Brand 13,This is sample description,123,FALSE,Good,5
+Product 24,102985,Brand 14,This is sample description,123,TRUE,Bad,2
+Product 25,114315,Brand 15,This is sample description,123,FALSE,Not Bad,3
+Product 26,125645,Brand 16,This is sample description,123,TRUE,Ok,4
+Product 27,136975,Brand 17,This is sample description,123,FALSE,Good,5
+Product 28,148305,Brand 18,This is sample description,123,TRUE,Bad,2
+Product 29,159635,Brand 19,This is sample description,123,FALSE,Not Bad,3
+Product 30,170965,Brand 20,This is sample description,123,TRUE,Ok,4
+Product 31,9989898,Brand 20,This is sample description,99,TRUE,Good,5
+Product 32,859585,Brand 20,This is sample description,343,TRUE,Good,4
+Product 33,7777788,Brand 21,This is sample description,66,FALSE
+Product 34,90909,Brand 21,This is sample description,8787,TRUE,Very Good ,5

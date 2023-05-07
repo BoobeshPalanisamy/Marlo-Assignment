@@ -1,0 +1,16 @@
+[
+    {
+        "first_name": "Boobesh",
+        "last_name": "P",
+        "username": "Boobesh",
+        "email": "boobesh@gmail.com",
+        "password": "boobesh123"
+    },
+    {
+        "first_name": "namecheck",
+        "last_name": "n",
+        "username": "namecheck",
+        "email": "emailcheck@gmail.com",
+        "password": "123email"
+    }
+]
