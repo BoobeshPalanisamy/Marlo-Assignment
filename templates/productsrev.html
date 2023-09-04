@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+  </head>
+  <body>
+    <h1>Product List</h1>
+
+    <!-- Table to display products -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>barcode</th>
+          <th>brand</th>
+          <th>description</th>
+          <th>price</th>
+          <th>available</th>
+          <th>Rating</th>
+          <th>Review</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for product in products %}
+        <tr>
+          <td>{{ product.name }}</td>
+          <td>{{ product.barcode }}</td>
+          <td>{{ product.brand }}</td>
+          <td>{{ product.description }}</td>
+          <td>{{ product.price}}</td>
+          <td>{{ product.available }}</td>
+          <td>
+            <input type="number" name="rating" style="width: 40px" />
+          </td>
+          <td>
+            <input type="text" name="review" placeholder="Enter your review" />
+          </td>
+          <td>
+            <input type="hidden" name="product_id" value="{{ product._id }}" />
+            <button type="button" onclick="submitReview(this)">
+              Submit Review
+            </button>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <script>
+      function submitReview(button) {
+        const row = button.parentElement.parentElement;
+        const productId = row.querySelector('input[name="product_id"]').value;
+        const rating = row.querySelector('input[name="rating"]').value;
+        const review = row.querySelector('input[name="review"]').value;
+
+        fetch("/submit_review", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            productId: productId,
+            rating: rating,
+            review: review,
+          }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.success) {
+              alert("Review submitted successfully!");
+            } else {
+              alert("Failed to submit review. Please try again.");
+            }
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
+    </script>
+  </body>
+</html>
